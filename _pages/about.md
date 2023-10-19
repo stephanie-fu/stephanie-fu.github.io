@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: masters student | EECS @ MIT
+subtitle: phd student | EECS @ UC Berkeley
 
 profile:
   align: right
@@ -16,8 +16,9 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+I am a PhD student at BAIR advised by <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a>.
 
-I am an MEng student at <a href='https://csail.mit.edu/'>MIT CSAIL</a>, advised by <a href='http://web.mit.edu/phillipi/'>Professor Phillip Isola</a>. Previously, I graduated from MIT with degrees in computer science and music. During my undergrad, I had the opportunity to work on exciting research under <a href='https://billf.mit.edu/'>Professor Bill Freeman</a>, <a href='http://mit-pbg.mit.edu/'>Professor Yoel Fink</a>, and <a href='http://web.mit.edu/phillipi/'>Professor Phillip Isola</a>.
+Previously, I graduated from MIT with an MEng in computer science (advised by Phillip Isola) and bachelors degrees in computer science and music. During my undergrad, I was fortunate to work on exciting research under <a href='https://billf.mit.edu/'>Bill Freeman</a>, <a href='http://mit-pbg.mit.edu/'>Yoel Fink</a>, and <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>.
 
 I am broadly interested in the science behind deep learning and representation learning, especially in the realm of computer vision. Most recently, I have been interested in developing and understanding models with visual intelligence.
 <hr>

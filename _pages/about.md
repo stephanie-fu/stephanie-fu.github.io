@@ -18,9 +18,9 @@ social: true  # includes social icons at the bottom of the page
 ---
 I am a PhD student at BAIR advised by <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a>.
 
-Previously, I graduated from MIT with an MEng in computer science (advised by Phillip Isola) and bachelors degrees in computer science and music. During my undergrad, I was fortunate to work on exciting research under <a href='https://billf.mit.edu/'>Bill Freeman</a>, <a href='http://mit-pbg.mit.edu/'>Yoel Fink</a>, and <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>.
+Previously, I graduated from MIT with an MEng in computer science (advised by <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>) and bachelors degrees in computer science and music. During my undergrad, I was fortunate to work on exciting research under <a href='https://billf.mit.edu/'>Bill Freeman</a>, <a href='http://mit-pbg.mit.edu/'>Yoel Fink</a>, and <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>.
 
-I am broadly interested in the science behind deep learning and representation learning, especially in the realm of computer vision. Most recently, I have been interested in developing and understanding models with visual intelligence.
+I am broadly interested in computer vision and representation learning. Recently, I have been thinking about how advances in these fields can help us model and better understand human visual intelligence.
 <hr>
-In 2019, I co-founded <a href='https://tedx.mit.edu'>TEDxMIT</a> and helped launch the inaugural conference at MIT CSAIL. Since then, TEDxMIT has brought communities across the Greater Boston area together with three more conferences and adapted to the COVID-19 pandemic by holding a virtual event. Check out the highlight reels from past events and details about the upcoming conference <a href='https://tedx.mit.edu/'>here</a>!
+In 2019, I co-founded <a href='https://tedx.mit.edu'>TEDxMIT</a> and helped launch the inaugural conference at MIT CSAIL. Since then, TEDxMIT has brought communities across the Greater Boston area together with regular events and speakers. Check out past and upcoming conferences <a href='https://tedx.mit.edu/'>here</a>!
 <hr>

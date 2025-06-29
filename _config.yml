@@ -198,8 +198,8 @@ defaults:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ['robots.txt', 'assets/js/dark_mode.js', 'assets/js/theme.js', 'assets/js/distillpub/template.v2.js']
-  compress_javascript: terser
+  exclude: ['robots.txt']
+  compress_javascript: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives

@@ -21,6 +21,10 @@ jobs:
       with:
         ruby-version: '3.0.2'
         bundler-cache: true
+    - name: Remove problematic default gem versions
+      run: gem uninstall uri -v 0.10.1 -aIx || true
+    - name: Install ImageMagick
+      run: sudo apt-get update && sudo apt-get install -y imagemagick
     - name: Install deps
       run: |
         npm install -g mermaid.cli

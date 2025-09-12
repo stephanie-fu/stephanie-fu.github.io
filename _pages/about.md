@@ -16,7 +16,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am a PhD student at BAIR advised by <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a>. I have been supported by the College of Engineering Fellowship and NSF GRFP.
+I am a PhD student at BAIR advised by <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a>. I have been supported by the College of Engineering Fellowship and am currently funded by the NSF GRFP.
 
 Previously, I graduated from MIT with an MEng in computer science (advised by <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>) and bachelors degrees in computer science and music. During my undergrad, I was fortunate to work on exciting research under <a href='https://billf.mit.edu/'>Bill Freeman</a>, <a href='http://mit-pbg.mit.edu/'>Yoel Fink</a>, and <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>.
 

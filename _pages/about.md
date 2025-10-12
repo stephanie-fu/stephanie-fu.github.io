@@ -14,6 +14,7 @@ profile:
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
+talks: true # includes a list of invited talks
 social: true  # includes social icons at the bottom of the page
 ---
 I am a PhD student at BAIR advised by <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a>. I have been supported by the College of Engineering Fellowship and am currently funded by the NSF GRFP.

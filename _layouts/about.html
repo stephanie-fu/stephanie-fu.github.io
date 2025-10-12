@@ -46,7 +46,28 @@ layout: default
           {%- endif %}
           {% if page.selected_papers -%}
             <!-- Selected papers -->
-            {%- include selected_papers.html %}
+            <div class="publications">
+              <h2 style="position: relative; cursor: pointer;" data-toggle="collapse" data-target="#selected-papers-collapse" aria-expanded="true" aria-controls="selected-papers-collapse">
+                selected publications
+                <i class="fas fa-chevron-up" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 0.6em; transition: transform 0.3s;"></i>
+              </h2>
+              <div class="collapse show" id="selected-papers-collapse">
+                {% bibliography -f papers -q @*[selected=true]* %}
+              </div>
+            </div>
+            <script>
+              document.querySelector('[data-target="#selected-papers-collapse"]').addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                const currentRotation = icon.dataset.rotation || 0;
+                const newRotation = parseInt(currentRotation) + 180;
+                icon.dataset.rotation = newRotation;
+                icon.style.transform = 'translateY(-50%) rotate(' + newRotation + 'deg)';
+              });
+            </script>
+          {%- endif %}
+          {% if page.talks -%}
+            <!-- Invited talks -->
+            {%- include talks.html %}
           {%- endif %}
           {%- if page.social %}
           <!-- Social -->

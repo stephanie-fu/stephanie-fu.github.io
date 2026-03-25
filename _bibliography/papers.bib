@@ -1,5 +1,22 @@
 ---
 ---
+@misc{shi2026attendattentionefficientscalable,
+  title={Attend Before Attention: Efficient and Scalable Video Understanding via Autoregressive Gazing},
+  author={Baifeng Shi* and Stephanie Fu* and Long Lian and Hanrong Ye and David Eigen and Aaron Reite and Boyi Li and Jan Kautz and Song Han and David M. Chan and Pavlo Molchanov and Trevor Darrell and Hongxu Yin},
+  eprint={2603.12254},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  year={2026},
+  url={https://arxiv.org/abs/2603.12254},
+  paper={https://arxiv.org/abs/2603.12254},
+  code={https://github.com/NVlabs/AutoGaze},
+  website={https://autogaze.github.io/},
+  huggingface={https://huggingface.co/collections/bfshi/autogaze},
+  preview={autogaze_icon.png},
+  abstract={Multi-modal large language models (MLLMs) have advanced general-purpose video understanding but struggle with long, high-resolution videos -- they process every pixel equally in their vision transformers (ViTs) or LLMs despite significant spatiotemporal redundancy. We introduce AutoGaze, a lightweight module that removes redundant patches before processed by a ViT or an MLLM. Trained with next-token prediction and reinforcement learning, AutoGaze autoregressively selects a minimal set of multi-scale patches that can reconstruct the video within a user-specified error threshold, eliminating redundancy while preserving information. Empirically, AutoGaze reduces visual tokens by 4x-100x and accelerates ViTs and MLLMs by up to 19x, enabling scaling MLLMs to 1K-frame 4K-resolution videos and achieving superior results on video benchmarks (e.g., 67.0% on VideoMME). Furthermore, we introduce HLVid: the first high-resolution, long-form video QA benchmark with 5-minute 4K-resolution videos, where an MLLM scaled with AutoGaze improves over the baseline by 10.1% and outperforms the previous best MLLM by 4.5%.},
+  selected=true
+}
+
 @misc{fu2025incorporatingfovealsampling,
   title={Incorporating foveal sampling and integration to model 3D shape inferences},
   author={Stephanie Fu and Trevor Darrell* and Tyler Bonnen*},

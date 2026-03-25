@@ -66,13 +66,14 @@
               {%- if forloop.first == false -%},&nbsp;{%- endif -%}
               {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
             {%- endif -%}
+            {%- assign display_last = author.last | replace: "*", "<sup>*</sup>" | replace: "†", "<sup>†</sup>" -%}
             {%- if author_is_self -%}
-              <em>{{author.first}} {{author.last}}</em>
+              <em>{{author.first}} {{display_last}}</em>
             {%- else -%}
               {%- if coauthor_url -%}
-                <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
+                <a href="{{coauthor_url}}">{{author.first}} {{display_last}}</a>
               {%- else -%}
-                {{author.first}} {{author.last}}
+                {{author.first}} {{display_last}}
               {%- endif -%}
             {%- endif -%}
           {%- endfor -%}

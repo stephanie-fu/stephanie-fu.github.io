@@ -6,14 +6,13 @@
   eprint={2603.12254},
   archivePrefix={arXiv},
   primaryClass={cs.CV},
-  conference={CVPR 2026},
   year={2026},
   url={https://arxiv.org/abs/2603.12254},
   paper={https://arxiv.org/abs/2603.12254},
   code={https://github.com/NVlabs/AutoGaze},
   website={https://autogaze.github.io/},
   huggingface={https://huggingface.co/collections/bfshi/autogaze},
-  award={CVPR highlight},
+  award={CVPR 2026 highlight},
   preview={autogaze_icon.png},
   abstract={Multi-modal large language models (MLLMs) have advanced general-purpose video understanding but struggle with long, high-resolution videos -- they process every pixel equally in their vision transformers (ViTs) or LLMs despite significant spatiotemporal redundancy. We introduce AutoGaze, a lightweight module that removes redundant patches before processed by a ViT or an MLLM. Trained with next-token prediction and reinforcement learning, AutoGaze autoregressively selects a minimal set of multi-scale patches that can reconstruct the video within a user-specified error threshold, eliminating redundancy while preserving information. Empirically, AutoGaze reduces visual tokens by 4x-100x and accelerates ViTs and MLLMs by up to 19x, enabling scaling MLLMs to 1K-frame 4K-resolution videos and achieving superior results on video benchmarks (e.g., 67.0% on VideoMME). Furthermore, we introduce HLVid: the first high-resolution, long-form video QA benchmark with 5-minute 4K-resolution videos, where an MLLM scaled with AutoGaze improves over the baseline by 10.1% and outperforms the previous best MLLM by 4.5%.},
   selected=true
@@ -22,9 +21,8 @@
 @misc{fu2025incorporatingfovealsampling,
   title={Incorporating foveal sampling and integration to model 3D shape inferences},
   author={Stephanie Fu and Trevor Darrell† and Tyler Bonnen†},
-  conference={CCN 2025},
   year={2025},
-  award={CCN oral (top 6.5%)},
+  award={CCN 2025 oral (top 6.5%)},
   preview = {ccn_icon.png},
   url={https://2025.ccneuro.org/abstract_pdf/Fu_2025_Incorporating_foveal_sampling_integration_model_3D.pdf},
   paper={https://2025.ccneuro.org/abstract_pdf/Fu_2025_Incorporating_foveal_sampling_integration_model_3D.pdf},
@@ -36,12 +34,11 @@
   title={Hidden in plain sight: VLMs overlook their visual representations},
   author={Stephanie Fu and Tyler Bonnen and Devin Guillory and Trevor Darrell},
   eprint={2506.08008},
-  conference={COLM 2025},
   archivePrefix={arXiv},
   primaryClass={cs.CV},
   year={2025},
   url={https://arxiv.org/abs/2506.08008},
-  award={COLM Outstanding Paper (top 0.9%) <br> CVPR 2025 EVAL-FoMo 2 Workshop Best Paper Award},
+  award={COLM 2025 Outstanding Paper (top 0.9%) <br> CVPR EVAL-FoMo 2 Workshop Best Paper Award},
   paper={https://arxiv.org/abs/2506.08008},
   preview = {hidden_sight_icon.png},
   abstract = {Language provides a natural interface to specify and evaluate performance on visual tasks. To realize this possibility, vision language models (VLMs) must successfully integrate visual and linguistic information. Our work compares VLMs to a direct readout of their visual encoders to understand their ability to integrate across these modalities. Across a series of vision-centric benchmarks (e.g., depth estimation, correspondence), we find that VLMs perform substantially worse than their visual encoders, dropping to near-chance performance. We investigate these results through a series of analyses across the entire VLM: namely 1) the degradation of vision representations, 2) brittleness to task prompt, and 3) the language model's role in solving the task. We find that the bottleneck in performing these vision-centric tasks lies in this third category; VLMs are not effectively using visual information easily accessible throughout the entire model, and they inherit the language priors present in the LLM. Our work helps diagnose the failure modes of open-source VLMs, and presents a series of evaluations useful for future investigations into visual understanding within VLMs.},
@@ -62,7 +59,7 @@
   preview = {stereoscopic_icon.png},
   abstract = {With rapid advancements in virtual reality (VR) headsets, effectively measuring stereoscopic quality of experience (SQoE) has become essential for delivering immersive and comfortable 3D experiences. However, most existing stereo metrics focus on isolated aspects of the viewing experience such as visual discomfort or image quality, and have traditionally faced data limitations. To address these gaps, we present SCOPE (Stereoscopic COntent Preference Evaluation), a new dataset comprised of real and synthetic stereoscopic images featuring a wide range of common perceptual distortions and artifacts. The dataset is labeled with preference annotations collected on a VR headset, with our findings indicating a notable degree of consistency in user preferences across different headsets. Additionally, we present iSQoE, a new model for stereo quality of experience assessment trained on our dataset. We show that iSQoE aligns better with human preferences than existing methods when comparing mono-to-stereo conversion methods.},
   website = {https://machinelearning.apple.com/research/good-stereoscopic},
-  selected=true
+  selected=false
 }
 
 @misc{sundaram2024doesperceptualalignmentbenefit,
@@ -94,7 +91,7 @@
   paper={https://arxiv.org/abs/2409.17216},
   preview = {governance_icon.png},
   abstract = {Current regulations on powerful AI capabilities are narrowly focused on "foundation" or "frontier" models. However, these terms are vague and inconsistently defined, leading to an unstable foundation for governance efforts. Critically, policy debates often fail to consider the data used with these models, despite the clear link between data and model performance. Even (relatively) "small" models that fall outside the typical definitions of foundation and frontier models can achieve equivalent outcomes when exposed to sufficiently specific datasets. In this work, we illustrate the importance of considering dataset size and content as essential factors in assessing the risks posed by models both today and in the future. More broadly, we emphasize the risk posed by over-regulating reactively and provide a path towards careful, quantitative evaluation of capabilities that can lead to a simplified regulatory environment.},
-  selected=true
+  selected=false
 }
 
 @misc{bonnen2024evaluatingmultiviewobjectconsistency,
@@ -130,7 +127,7 @@
   huggingface={https://huggingface.co/datasets/osv5m/osv5m},
   preview = {osv_icon.png},
   abstract = {Determining the location of an image anywhere on Earth is a complex visual task, which makes it particularly relevant for evaluating computer vision algorithms. Yet, the absence of standard, large-scale, open-access datasets with reliably localizable images has limited its potential. To address this issue, we introduce OpenStreetView-5M, a large-scale, open-access dataset comprising over 5.1 million geo-referenced street view images, covering 225 countries and territories. In contrast to existing benchmarks, we enforce a strict train/test separation, allowing us to evaluate the relevance of learned geographical features beyond mere memorization. To demonstrate the utility of our dataset, we conduct an extensive benchmark of various state-of-the-art image encoders, spatial representations, and training strategies. },
-  selected=true
+  selected=false
 }
 
 @misc{sharma2024visioncheckuplanguagemodels,
@@ -146,7 +143,7 @@
   website = {https://vision-checkup.csail.mit.edu},
   preview = {checkup_icon.png},
   abstract = {What does learning to model relationships between strings teach large language models (LLMs) about the visual world? We systematically evaluate LLMs' abilities to generate and recognize an assortment of visual concepts of increasing complexity and then demonstrate how a preliminary visual representation learning system can be trained using models of text. As language models lack the ability to consume or output visual information as pixels, we use code to represent images in our study. Although LLM-generated images do not look like natural images, results on image generation and the ability of models to correct these generated images indicate that precise modeling of strings can teach language models about numerous aspects of the visual world. Furthermore, experiments on self-supervised visual representation learning, utilizing images generated with text models, highlight the potential to train vision models capable of making semantic assessments of natural images using just LLMs.},
-  selected=true
+  selected=false
 }
 
 @misc{fu2024featupmodelagnosticframeworkfeatures,
@@ -198,7 +195,7 @@
   website = {https://mhamilton.net/axiomatic.html},
   code = {https://mhamilton.net/axiomatic.html},
   abstract = {Visual search, recommendation, and contrastive similarity learning power technologies that impact billions of users worldwide. Modern model architectures can be complex and difficult to interpret, and there are several competing techniques one can use to explain a search engine's behavior. We show that the theory of fair credit assignment provides a unique axiomatic solution that generalizes several existing recommendation- and metric-explainability techniques in the literature. Using this formalism, we show when existing approaches violate "fairness" and derive methods that sidestep these shortcomings and naturally handle counterfactual information. More specifically, we show existing approaches implicitly approximate second-order Shapley-Taylor indices and extend CAM, GradCAM, LIME, SHAP, SBSM, and other methods to search engines. These extensions can extract pairwise correspondences between images from trained opaque-box models. We also introduce a fast kernel-based method for estimating Shapley-Taylor indices that require orders of magnitude fewer function evaluations to converge. Finally, we show that these game-theoretic measures yield more consistent explanations for image similarity architectures.},
-  selected=true
+  selected=false
 }
 
 @article{pmlr-v133-hamilton21a,
@@ -214,7 +211,7 @@
   website={https://aka.ms/mosaic},
   abstract = 	 {We introduce MosAIc, an interactive web app that allows users to find pairs of semantically related artworks that span different cultures, media, and millennia. To create this application, we introduce Conditional Image Retrieval (CIR) which combines visual similarity search with user supplied filters or "conditions". This technique allows one to find pairs of similar images that span distinct subsets of the image corpus. We provide a generic way to adapt existing image retrieval data-structures to this new domain and provide theoretical bounds on our approach's efficiency. To quantify the performance of CIR systems, we introduce new datasets for evaluating CIR methods and show that CIR performs non-parametric style transfer. Finally, we demonstrate that our CIR data-structures can identify "blind spots" in Generative Adversarial Networks (GAN) where they fail to properly model the true data distribution.},
   preview = {mosaic_icon.png},
-  selected=true
+  selected=false
 }
 
 @article{Loke2021,
@@ -248,5 +245,5 @@ doi={10.1038/s41467-021-23628-5},
 abbr={Nature Commun.},
 paper={https://doi.org/10.1038/s41467-021-23628-5},
 preview={fibers_icon.png},
-selected=true
+selected=false
 }

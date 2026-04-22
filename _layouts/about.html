@@ -45,25 +45,60 @@ layout: default
           {%- include news.html %}
           {%- endif %}
           {% if page.selected_papers -%}
-            <!-- Selected papers -->
+            <!-- Publications -->
             <div class="publications">
-              <h2 style="position: relative; cursor: pointer;" data-toggle="collapse" data-target="#selected-papers-collapse" aria-expanded="true" aria-controls="selected-papers-collapse">
-                selected publications
+              <h2 style="position: relative; cursor: pointer;" data-toggle="collapse" data-target="#publications-collapse" aria-expanded="true" aria-controls="publications-collapse">
+                publications
+                <span class="publications-toggle" role="tablist" aria-label="publications view">
+                  <button type="button" class="publications-toggle-btn active" data-view="selected" aria-pressed="true">selected</button>
+                  <button type="button" class="publications-toggle-btn" data-view="all" aria-pressed="false">all</button>
+                </span>
                 <i class="fas fa-chevron-up" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 0.6em; transition: transform 0.3s;"></i>
               </h2>
-              <div class="collapse show" id="selected-papers-collapse">
+              <div class="collapse show" id="publications-collapse">
                 <p style="margin-top: -0.5rem; margin-bottom: 1rem; font-size: 0.9rem;">* equal contribution &nbsp;&nbsp; † equal advising</p>
-                {% bibliography -f papers -q @*[selected=true]* %}
+                <div id="publications-view-selected">
+                  {% bibliography -f papers -q @*[selected=true]* %}
+                </div>
+                <div id="publications-view-all" style="display: none;">
+                  {% bibliography -f papers %}
+                </div>
               </div>
             </div>
             <script>
-              document.querySelector('[data-target="#selected-papers-collapse"]').addEventListener('click', function() {
-                const icon = this.querySelector('i');
-                const currentRotation = icon.dataset.rotation || 0;
-                const newRotation = parseInt(currentRotation) + 180;
-                icon.dataset.rotation = newRotation;
-                icon.style.transform = 'translateY(-50%) rotate(' + newRotation + 'deg)';
-              });
+              (function() {
+                var heading = document.querySelector('[data-target="#publications-collapse"]');
+                var icon = heading.querySelector('i.fas');
+                heading.addEventListener('click', function(e) {
+                  if (e.target.closest('.publications-toggle')) { return; }
+                  var currentRotation = parseInt(icon.dataset.rotation || 0);
+                  var newRotation = currentRotation + 180;
+                  icon.dataset.rotation = newRotation;
+                  icon.style.transform = 'translateY(-50%) rotate(' + newRotation + 'deg)';
+                });
+
+                var selectedView = document.getElementById('publications-view-selected');
+                var allView = document.getElementById('publications-view-all');
+                var buttons = document.querySelectorAll('.publications-toggle-btn');
+
+                function setView(view) {
+                  var isSelected = view === 'selected';
+                  selectedView.style.display = isSelected ? '' : 'none';
+                  allView.style.display = isSelected ? 'none' : '';
+                  buttons.forEach(function(btn) {
+                    var active = btn.dataset.view === view;
+                    btn.classList.toggle('active', active);
+                    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+                  });
+                }
+
+                buttons.forEach(function(btn) {
+                  btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    setView(btn.dataset.view);
+                  });
+                });
+              })();
             </script>
           {%- endif %}
           {% if page.talks -%}

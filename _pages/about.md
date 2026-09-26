@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 talks: true # includes a list of invited talks
 social: true  # includes social icons at the bottom of the page
 ---
-I am a PhD student at BAIR advised by <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a>. I have been supported by the College of Engineering Fellowship and am currently funded by the NSF GRFP.
+I am a PhD student at BAIR co-advised by <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a> and <a href='https://psychology.sas.upenn.edu/people/tyler-bonnen'>Tyler Bonnen</a>. I have been supported by the College of Engineering Fellowship and am currently funded by the NSF GRFP.
 
 Previously, I graduated from MIT with an MEng in computer science (advised by <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>) and bachelors degrees in computer science and music. During my undergrad, I was fortunate to work on exciting research under <a href='https://billf.mit.edu/'>Bill Freeman</a>, <a href='http://mit-pbg.mit.edu/'>Yoel Fink</a>, and <a href='http://web.mit.edu/phillipi/'>Phillip Isola</a>.
 

@@ -660,6 +660,24 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
+// News scroll box with an always-visible scrollbar
+.news-scrollable {
+  scrollbar-width: thin; // Firefox
+  scrollbar-color: var(--global-text-color-light) var(--global-scrollbar-track-color);
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--global-scrollbar-track-color);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--global-text-color-light);
+    border-radius: 4px;
+  }
+}
+
 // Extra Markdown style (post Customization)
 .post{
   .post-meta{
